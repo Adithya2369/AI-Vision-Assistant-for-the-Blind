@@ -1,0 +1,11 @@
+# ─────────────────────────────────────────────
+#  requirements_pi.txt
+#  Install on: RASPBERRY PI
+#  pip install -r requirements_pi.txt
+# ─────────────────────────────────────────────
+
+# Camera capture
+opencv-python-headless>=4.9.0   # headless = no GUI, smaller download
+
+# Text-to-speech
+pyttsx3>=2.90

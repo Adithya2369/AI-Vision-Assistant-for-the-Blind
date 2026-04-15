@@ -1,0 +1,21 @@
+# ─────────────────────────────────────────────
+#  requirements_laptop.txt
+#  Install on: LAPTOP
+#  pip install -r requirements_laptop.txt
+# ─────────────────────────────────────────────
+
+# Object detection
+ultralytics>=8.2.0
+
+# Monocular depth estimation
+transformers>=4.40.0
+torch>=2.2.0
+torchvision>=0.17.0
+
+# Image processing
+opencv-python>=4.9.0
+Pillow>=10.0.0
+numpy>=1.26.0
+
+# Gemini API
+google-generativeai>=0.5.0
