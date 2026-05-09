@@ -54,6 +54,10 @@ When you run `python main.py`:
 10. If yes: Gemini generates a spoken alert. That alert is spoken **before** the next navigation instruction.
 11. You walk, it talks. It announces turns when you are close enough to act on them.
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Adithya2369/AI-Vision-Assistant-for-the-Blind/main/block_diagram.png" width="600"/>
+</p>
+
 ---
 
 ## Technology Stack
@@ -304,6 +308,11 @@ python simulate_detect.py --image test.jpg --conf 0.3
 ```
 
 No audio is produced in this mode. It is for testing and demonstrating the detection pipeline only.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Adithya2369/AI-Vision-Assistant-for-the-Blind/main/test.jpg" width="800"/>
+  <img src="https://raw.githubusercontent.com/Adithya2369/AI-Vision-Assistant-for-the-Blind/main/test_result.jpg" width="800"/>
+</p>
 
 ---
 
