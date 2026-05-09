@@ -1,0 +1,42 @@
+# =============================================================================
+# requirements.txt — AI Vision Assistant for the Blind
+# =============================================================================
+# Install with:
+#   pip install -r requirements.txt
+#
+# Notes:
+#   - All packages are free / open-source.
+#   - torch is pulled in as a dependency of transformers + ultralytics.
+#   - On Raspberry Pi, install torch separately (ARM wheel):
+#       https://pytorch.org/get-started/locally/
+# =============================================================================
+
+# ── Vision / AI ───────────────────────────────────────────────────────────────
+torch                    # Deep learning (CPU by default)
+torchvision              # Required by some YOLO variants
+ultralytics              # YOLOv8
+transformers             # Depth Anything V2 via HuggingFace
+Pillow                   # Image I/O
+opencv-python            # Camera capture + image drawing
+numpy                    # Numerical operations
+
+# ── Gemini ────────────────────────────────────────────────────────────────────
+google-generativeai      # Gemini API client
+
+# ── Navigation ────────────────────────────────────────────────────────────────
+geopy                    # Nominatim geocoding + Haversine
+requests                 # OSRM HTTP calls
+
+# ── Voice ─────────────────────────────────────────────────────────────────────
+gTTS                     # Text-to-Speech (online, natural)
+pygame                   # Audio playback for gTTS mp3 output
+SpeechRecognition        # Speech-to-Text wrapper
+pyaudio                  # Microphone audio capture (required by SpeechRecognition)
+
+# ── GPS ───────────────────────────────────────────────────────────────────────
+gpsd-py3                 # gpsd client (works on laptop if gpsd daemon is running)
+
+# ── RASPBERRY PI ONLY ─────────────────────────────────────────────────────────
+# Uncomment if deploying to Raspberry Pi with USB serial GPS:
+# pyserial                # Serial port access for USB GPS dongle
+# pynmea2                 # NMEA sentence parser for serial GPS
