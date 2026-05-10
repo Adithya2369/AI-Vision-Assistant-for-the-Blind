@@ -40,7 +40,7 @@ The project is written in Python 3 and uses only free tools — no paid APIs exc
 
 # 🎓 Academic Project Information
 
-This repository is a part of my B.Tech Final Year Project and represents **Module 7 of 7** of the complete system.
+This repository is a part of my B.Tech Final Year Project and represents **Module 3 of 7** of the complete system.
 
 It focuses on building an AI-powered assistive navigation system for blind and visually impaired users using computer vision, GPS-based navigation, voice interaction, and Raspberry Pi-compatible deployment. 
 
