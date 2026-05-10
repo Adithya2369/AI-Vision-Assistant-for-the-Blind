@@ -1,4 +1,4 @@
-# AI Vision Assistant for the Blind
+# 🤖 AI Vision Assistant for the Blind
 
 A voice-operated walking navigation and obstacle detection system for blind and visually impaired users. The user speaks a destination; the system gives turn-by-turn walking directions and alerts about obstacles directly ahead — entirely through audio.
 
@@ -6,7 +6,7 @@ Built for a laptop during development. Deployable to a Raspberry Pi with minimal
 
 ---
 
-## Table of Contents
+## 👋 Table of Contents
 
 1. [Introduction](#introduction)
 2. [What the System Does](#what-the-system-does)
@@ -25,7 +25,7 @@ Built for a laptop during development. Deployable to a Raspberry Pi with minimal
 
 ---
 
-## Introduction
+## ♿ Introduction
 
 This project was built to assist blind and visually impaired individuals with independent navigation. Most navigation apps require looking at a screen. This system is fully voice-operated: you speak to it, it speaks back. No screen, no keyboard, no touch.
 
@@ -38,7 +38,15 @@ The project is written in Python 3 and uses only free tools — no paid APIs exc
 
 ---
 
-## What the System Does
+# 🎓 Academic Project Information
+
+This repository is a part of my B.Tech Final Year Project and represents **Module 7 of 7** of the complete system.
+
+It focuses on building an AI-powered assistive navigation system for blind and visually impaired users using computer vision, GPS-based navigation, voice interaction, and Raspberry Pi-compatible deployment. 
+
+---
+
+## 📌 What the System Does
 
 When you run `python main.py`:
 
@@ -60,7 +68,7 @@ When you run `python main.py`:
 
 ---
 
-## Technology Stack
+## ⚙️ Technology Stack
 
 | Layer | Tool | Why |
 |---|---|---|
@@ -75,7 +83,7 @@ When you run `python main.py`:
 
 ---
 
-## Requirements
+## 🖥️ Requirements
 
 ### Python Version
 
@@ -106,7 +114,7 @@ The navigation loop does not need internet after the route has been fetched, but
 
 ---
 
-## Project Structure
+## 🗂️ Project Structure
 
 ```
 VisionAssistant/
@@ -134,7 +142,7 @@ Each module has a single responsibility. `config.py` is the only file with hardc
 
 ---
 
-## Installation
+## 📦 Installation
 
 ### Step 1: System prerequisites
 
@@ -183,7 +191,7 @@ These are cached after the first download. Subsequent runs load from cache.
 
 ---
 
-## Configuration
+## 🔧 Configuration
 
 Everything is in `config.py`. The most important parameters:
 
@@ -203,7 +211,7 @@ Everything is in `config.py`. The most important parameters:
 
 ---
 
-## Running the System
+## ▶️ Running the System
 
 ### Full system
 
@@ -215,7 +223,7 @@ Requires microphone, speaker, internet, and USB webcam. GPS hardware is optional
 
 ---
 
-## Simulation Modes
+## 💡 Simulation Modes
 
 These let you test parts of the system without all the hardware.
 
@@ -316,7 +324,7 @@ No audio is produced in this mode. It is for testing and demonstrating the detec
 
 ---
 
-## Raspberry Pi Deployment
+## 🍓 Raspberry Pi Deployment
 
 The laptop and Pi codebases are identical. Three things need to be changed.
 
@@ -389,7 +397,7 @@ GPS dongles need a clear outdoor sky view to acquire a satellite fix. Allow 1–
 
 ---
 
-## How Obstacle Detection Works
+## 👁️ How Obstacle Detection Works
 
 Every `OBSTACLE_CHECK_INTERVAL` seconds (default: 5):
 
@@ -408,7 +416,7 @@ If Gemini fails for any reason (API error, no internet), the system generates a 
 
 ---
 
-## Known Limitations
+## ⚠️ Known Limitations
 
 These are real constraints of the current implementation.
 
@@ -428,7 +436,7 @@ These are real constraints of the current implementation.
 
 ---
 
-## Troubleshooting
+## 🛠️ Troubleshooting
 
 **`pyaudio` install fails on Linux or Pi**
 ```bash
@@ -490,7 +498,7 @@ Place a test image named `test.jpg` in the project folder, or pass `--image <pat
 
 ---
 
-## Extending the System
+## 🚀 Extending the System
 
 **Change the city**
 
@@ -538,3 +546,15 @@ OSRM_BASE_URL = "http://localhost:5000"
 - Raise `YOLO_CONFIDENCE` → fewer false detections from shadows and distant objects
 - Lower `OBSTACLE_CHECK_INTERVAL` → faster detection, higher CPU usage
 - Raise `CENTRE_ZONE_FRACTION` (e.g. `0.4`) → wider centre zone, more sensitive
+
+---
+
+# 📜 License
+
+This project is intended for educational and research purposes.
+
+---
+
+# 👨‍💻 Author
+
+T. Adithya Reddy
